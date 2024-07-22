@@ -1,0 +1,45 @@
+/* Tablet Responsive */
+
+@media screen and (min-width:767px) {
+    main {
+        padding: 10px 40px;
+    }
+
+    h1 {
+        text-align: left;
+    }
+
+    .recipe-title::after {
+        content: " (Dolce Tradizionale)";
+    }
+
+    .recipe-details {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 40px 0;
+        justify-content: flex-start;
+        gap: 35px;
+        align-items: center;
+    }
+
+    .recipe-details li {
+        margin: 0;
+    }
+
+    #Social-Navbar a {
+        padding: 10px 50px;
+    }
+
+    #Banner-ads {
+        display: block;
+        padding-top: 15px;
+    }
+
+    .recipe-img {
+        margin: 5px 10px 0px 0px;
+        float: left;
+    }
+
+
+
+}
