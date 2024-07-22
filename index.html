@@ -14,59 +14,65 @@
         integrity='sha512-U9Y1sGB3sLIpZm3ePcrKbXVhXlnQNcuwGQJ2WjPjnp6XHqVTdgIlbaDzJXJIAuCTp3y22t+nhI4B88F/5ldjFA=='
         crossorigin='anonymous'>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/resposive.css">
     <title>Italian tiramisù recipe</title>
 </head>
 
 <body>
-
+    <!-- Heading -->
     <header class="mb-25">
-        <h1 class="t-shadow">GIALLO BOOLEANO</h1>
+        <h1 id="site-name" class="t-shadow">GIALLO BOOLEANO</h1>
     </header>
-
-    <main class>
-        <div class="container">
+    <!-- Main text -->
+    <main>
+        <!-- Recipe -->
+        <section id="recipe" class="container">
             <p class="recipe-category c-gray m-10">DOLCI E DESSERT</p>
             <div class=" mb-15 flex">
                 <h2 class="recipe-title c-purple">Tiramisù</h2>
+                <!-- Rating -->
                 <div class=" recipe-rating">
                     <span class="rating-stars"><i class="fa-solid fa-star c-orange"></i><strong>4.6</strong>/5</span>
                     <button class=" btn-rate bg-orange p-10" type="button">RATE</button>
                 </div>
             </div>
             <div class="bg-white">
+                <!-- Recipe Video -->
                 <div class="video-wrapper recipe-video">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/JVT900H6s0g?si=6uDkDJY22dSloIEe"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
-                <div class="p-30">
+                <!-- Recipe Info -->
+                <div class="p-35">
                     <div class="recipe-info p-20 container-small bg-l-purple">
                         <div class="flex">
                             <span class=" calories bg-purple c-white">544 Kcal</span>
                             <button type="button" class="c-orange btn-info">+ info</button>
                         </div>
                         <div class="border"></div>
-                        <span><i class="fa-solid fa-carrot"></i>VEGETARIANO</span>
+                        <span><i class="fa-solid fa-carrot"></i> VEGETARIANO</span>
                     </div>
-                    <ul class="lista">
-                        <li><i class="c-orange fa-solid fa-blender "></i><span>Difficoltà:
+                    <ul class="recipe-details">
+                        <li><i class="c-orange fa-solid fa-blender"></i><span> Difficoltà:
                                 <strong>Facile</strong></span>
                         </li>
-                        <li><i class="c-orange fa-solid fa-clock"></i><span>Tempo: <strong>40 min</strong></span></li>
-                        <li><i class="c-orange fa-solid fa-chart-pie"></i><span>Porzione per: <strong>8
+                        <li><i class="c-orange fa-solid fa-clock"></i><span> Tempo: <strong>40 min</strong></span></li>
+                        <li><i class="c-orange fa-solid fa-chart-pie"></i><span> Porzione per: <strong>8
                                     Persone</strong></span>
                         </li>
-                        <li><i class="c-orange fa-solid fa-euro"></i><span>Costo: <strong>contenuto</strong></span></li>
-                        <li><i class="c-orange fa-solid fa-thumbtack"></i><span><strong>Note:</strong> +2 ore di riposo
+                        <li><i class="c-orange fa-solid fa-euro"></i><span> Costo: <strong>contenuto</strong></span>
+                        </li>
+                        <li><i class="c-orange fa-solid fa-thumbtack"></i><span><strong> Note:</strong> +2 ore di riposo
                                 in
                                 frigo</span>
                         </li>
                     </ul>
                 </div>
             </div>
-        </div>
+        </section>
+        <!-- Share -->
         <nav id="Social-Navbar" class="container">
             <ul class="flex">
                 <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
@@ -77,6 +83,9 @@
 
             </ul>
         </nav>
+        <!-- Recipe ads -->
+        <div id="Banner-ads" class="container m-40"><img src="./img/banner.png" alt="Banner ads"></div>
+        <!-- Recipe Presentation -->
         <section id="Recipe-presentation" class="container">
 
             <h2>PRESENTATION</h2>
@@ -101,8 +110,26 @@
 
         </section>
     </main>
+    <!-- Site Author -->
+    <footer class=" container bg-violet c-white p-35 mt-40">
+        <address>
+            <h4 class="site-author">
+                <span><i class="fa-regular fa-copyright fa-xs"></i></span> 2021 Giallo Booleano S.p.a.
+            </h4>
+            <!-- Site Address -->
+            <p class="site-address m-10">Via Tal dei tali, 10 - 88046 Lamezia Terme - VAT 43940293020</p>
+        </address>
+        <!-- Copyright -->
+        <nav id="footer navbar"></nav>
+        <ul class="flex copyright">
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Terms of use</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#">Disclaimer</a></li>
+        </ul>
 
-    <footer></footer>
+    </footer>
 
 </body>
 
