@@ -6,52 +6,67 @@
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <meta name="author" content="Giallo Booleano">
     <meta name="description" content="Tiramisù Recipe">
+    <title>Italian tiramisù recipe</title>
+    <!-- GOOGLE FONTS -->
     <link
         href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nerko+One:regular" rel="stylesheet">
+    <!-- STYLESHEET BOOTSTRAP -->
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.css'
         integrity='sha512-U9Y1sGB3sLIpZm3ePcrKbXVhXlnQNcuwGQJ2WjPjnp6XHqVTdgIlbaDzJXJIAuCTp3y22t+nhI4B88F/5ldjFA=='
         crossorigin='anonymous'>
+    <!-- STYLESHEET CSS -->
     <link rel="stylesheet" href="./css/style.css">
+    <!-- STYLESHEET RESPONSIVE -->
     <link rel="stylesheet" href="./css/resposive.css">
-    <title>Italian tiramisù recipe</title>
 </head>
 
-<body>
+<body class="bg-light-grey">
+
     <!-- Heading -->
-    <header class="mb-25">
+    <!-- Giallo Boleano Title -->
+    <header class="mb-25 bg-white py-5 px-20">
         <h1 id="site-name" class="t-shadow">GIALLO BOOLEANO</h1>
     </header>
+
     <!-- Main text -->
-    <main>
+    <main class="px-40 ">
+
         <!-- Recipe -->
         <section id="recipe" class="container">
             <p class="recipe-category c-gray m-10">DOLCI E DESSERT</p>
-            <div class=" mb-15 flex">
+            <div class=" mb-15 d-flex justify-content-between align-items-center">
                 <h2 class="recipe-title c-purple">Tiramisù</h2>
+
                 <!-- Rating -->
                 <div class=" recipe-rating">
                     <span class="rating-stars"><i class="fa-solid fa-star c-orange"></i><strong>4.6</strong>/5</span>
-                    <button class=" btn-rate bg-orange p-10" type="button">RATE</button>
+                    <button class=" btn-rate c-white bg-orange p-10" type="button">RATE</button>
                 </div>
             </div>
-            <div class=" row bg-white">
+            <div class=" lg-row bg-white">
+
                 <!-- Recipe Video -->
-                <div class=" col-70 video-wrapper recipe-video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/JVT900H6s0g?si=6uDkDJY22dSloIEe"
-                        title="YouTube video player" frameborder="0"
+                <div class=" lg-col-70 video-wrapper recipe-video">
+                    <iframe class="border-0" width="560" height="315"
+                        src="https://www.youtube.com/embed/JVT900H6s0g?si=6uDkDJY22dSloIEe" title="YouTube video player"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
+
                 <!-- Recipe Info -->
-                <div class="col-30 p-35">
-                    <div class="recipe-info p-20 container-small bg-l-purple">
-                        <div class="flex">
+                <div class="lg-col-30 p-35">
+                    <div class="recipe-info wrapper p-20 bg-light-purple">
+                        <div class="d-flex justify-content-between align-items-center">
+
+                            <!-- Calories -->
                             <span class=" calories bg-purple c-white">544 Kcal</span>
                             <button type="button" class="c-orange btn-info">+ info</button>
                         </div>
-                        <div class="border"></div>
+
+                        <!-- Recipe Details -->
+                        <div class="border-bottom my-15"></div>
                         <span><i class="fa-solid fa-carrot"></i> VEGETARIANO</span>
                     </div>
                     <ul class="recipe-details">
@@ -72,25 +87,34 @@
                 </div>
             </div>
         </section>
+
         <!-- Share Links-->
         <nav id="Social-Navbar" class="container">
-            <ul class="flex">
-                <li><a href="#"><i class="fa-brands fa-facebook"></i> <span>FACEBOOK</span></a></li>
-                <li><a href="#"><i class="fa-brands fa-twitter"></i> <span>TWITTER</span></a></li>
-                <li><a href="#"><i class="fa-brands fa-instagram"></i> <span>INSTAGRAM</span></a></li>
-                <li><a href="#"><i class="fa-brands fa-pinterest"></i> <span>PINTEREST</span></a></li>
-                <li><a href="#"><i class="fa-brands fa-youtube"></i> <span>YOUTUBE</span></a></li>
+            <ul class="my-40 d-flex justify-content-between align-items-center">
+                <li><a href="#"><i class="fa-brands fa-facebook c-blue"></i> <span
+                            class="d-none lg-d-inline">FACEBOOK</span></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter c-light-blue"></i> <span
+                            class="d-none lg-d-inline">TWITTER</span></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram c-pink"></i> <span
+                            class="d-none lg-d-inline">INSTAGRAM</span></a></li>
+                <li><a href="#"><i class="fa-brands fa-pinterest c-red"></i> <span
+                            class="d-none lg-d-inline">PINTEREST</span></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube c-red"></i> <span
+                            class="d-none lg-d-inline">YOUTUBE</span></a></li>
 
             </ul>
         </nav>
+
         <!-- Recipe Ads -->
-        <div id="Banner-ads" class="container"><img class="m-40" src="./img/banner.png" alt="Banner ads"></div>
+        <div id="Banner-ads" class="container d-none md-d-block md-pt-15"><img class="img-fluid m-40"
+                src="./img/banner.png" alt="Banner ads"></div>
+
         <!-- Recipe Presentation -->
-        <section id="Recipe-presentation" class="container">
+        <section id="Recipe-presentation" class="container pb-40">
 
             <h2>PRESENTATION</h2>
             <div class="border c-orange w-15 m-15"></div>
-            <figure class="recipe-img"><img src="./img/tiramisu.jpg" alt="Tiramisù photo"></figure>
+            <figure class="img-wrapper"><img class="img-fluid" src="./img/tiramisu.jpg" alt="Tiramisù photo"></figure>
             <p class="recipe-short-story mt-10">
                 Back in the day, grandmothers used to prepare a breakfast that we might call humble today, but was
                 considered very rich at the time! Today the recipe is still unchanged, just break a very fresh egg
@@ -110,24 +134,28 @@
 
         </section>
     </main>
+
     <!-- Site Author -->
     <footer class="bg-violet c-white p-35 mt-40">
-        <address>
+        <address class="mb-25">
             <div class="site-author">
                 <span><i class="fa-regular fa-copyright fa-xs"></i></span> <strong>2021 Giallo Booleano S.p.a.</strong>
             </div>
+
             <!-- Site Address -->
             <p class="site-address m-10">Via Tal dei tali, 10 - 88046 Lamezia Terme - VAT 43940293020</p>
         </address>
+
         <!-- Copyright -->
-        <nav id="Footer-navbar"></nav>
-        <ul class="flex copyright">
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Terms of use</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Cookie Policy</a></li>
-            <li><a href="#">Disclaimer</a></li>
-        </ul>
+        <nav id="Footer-navbar">
+            <ul class="copyright d-flex justify-content-center  align-items-center flex-wrap gap-20">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Terms of use</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cookie Policy</a></li>
+                <li><a href="#">Disclaimer</a></li>
+            </ul>
+        </nav>
 
     </footer>
 

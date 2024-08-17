@@ -1,7 +1,17 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    font-family: Montserrat, 'Helvetica Neue', sans-serif;
+    margin: 0;
+}
+
 /* Custom Properties */
 :root {
+    /* Colors */
     --dark-orange: #FF9614;
     --dark-purple: #4E3969;
+    --dark-grey: #8f8f8f;
     --purple: #7B69A2;
     --violet: #7C69A4;
     --gray: #BCBAB7;
@@ -11,137 +21,23 @@
     --light-blue: #1C9CEA;
     --red: #DF0022;
     --pink: #DD2A7B;
-    --light-purple: #F6F5F9;
+    --light-purple: #e7e5ed;
     --black: #000000;
-}
 
-/* Reset */
-* {
-    box-sizing: border-box;
-    padding: 0;
-    font-family: Montserrat, 'Helvetica Neue', sans-serif;
-    margin: 0;
-}
-
-/* generics */
-body {
-    background-color: var(--light-grey);
-}
-
-header {
-    background-color: var(--white);
-    padding: 5px 20px;
-}
-
-main {
-    padding: 0 40px;
-}
-
-footer {
-    text-align: center;
-}
-
-h1 {
-    font-family: 'Nerko One', cursive;
-    text-align: center;
-    color: var(--dark-orange);
-    font-size: 3rem;
-    font-weight: 100;
-}
-
-ul {
-    list-style-type: none;
-}
-
-/* Utils */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.container-small,
-img {
-    width: 100%;
-}
-
-.t-shadow {
-    text-shadow: 2px 1px 2px #8f8f8f;
-}
-
-
-.flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* Buttons */
-.btn-rate {
-    color: var(--white);
-    border-radius: 25px;
-}
-
-.btn-info,
-.btn-rate {
-    font-size: 1.1rem;
-    font-weight: 700;
-}
-
-.btn-info,
-.btn-rate {
-    border: none;
-    background-color: transparent;
-}
-
-/* Spacing */
-.p-10 {
-    padding: 10px;
-}
-
-.p-20 {
-    padding: 20px;
-}
-
-.p-35 {
-    padding: 35px;
-}
-
-.m-10 {
-    margin: 10px 0;
-}
-
-.m-15 {
-    margin: 15px 0;
-}
-
-.m-40 {
-    margin: 40px 0;
-}
-
-.mt-10 {
-    margin-top: 10px;
-}
-
-.mt-40 {
-    margin-top: 40px;
-}
-
-.mb-15 {
-    margin-bottom: 15px
-}
-
-.mb-25 {
-    margin-bottom: 25px;
-}
-
-/* Sizes */
-.w-15 {
-    width: 15%
+    /* Units */
+    --xs: 10px;
+    --sm: 20px;
+    --md: 30px;
+    --lg: 40px;
 }
 
 /* Color Palette */
 .bg-white {
     background-color: var(--white);
+}
+
+.bg-light-grey {
+    background-color: var(--light-grey);
 }
 
 .bg-orange {
@@ -152,7 +48,7 @@ img {
     background-color: var(--purple)
 }
 
-.bg-l-purple {
+.bg-light-purple {
     background-color: var(--light-purple);
 }
 
@@ -176,21 +72,191 @@ img {
     color: var(--dark-purple);
 }
 
-.fa-facebook {
+.c-blue {
     color: var(--blue);
 }
 
-.fa-twitter {
+.c-light-blue {
     color: var(--light-blue);
 }
 
-.fa-instagram {
+.c-pink {
     color: var(--pink);
 }
 
-.fa-pinterest,
-.fa-youtube {
+.c-red {
     color: var(--red);
+}
+
+/* generics */
+
+footer {
+    text-align: center;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+/* Utils */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.img-fluid {
+    width: 100%;
+}
+
+.t-shadow {
+    text-shadow: 2px 1px 2px var(--dark-grey);
+}
+
+.img-wrapper {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.d-none {
+    display: none;
+}
+
+.border {
+    border: 1px solid;
+}
+
+.border-0 {
+    border: none;
+}
+
+
+/* Buttons */
+.btn-rate {
+    border-radius: 25px;
+}
+
+.btn-info {
+    background: none;
+}
+
+.btn-info,
+.btn-rate {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.btn-info,
+.btn-rate {
+    cursor: pointer;
+    border: none;
+}
+
+/* Spacing */
+/* Padding */
+.p-10 {
+    padding: var(--xs);
+}
+
+.p-20 {
+    padding: var(--sm);
+}
+
+.p-35 {
+    padding: 35px;
+}
+
+.py-5 {
+    padding: 5px 0;
+}
+
+.px-20 {
+    padding: 0 var(--md);
+}
+
+.px-40 {
+    padding: 0 var(--lg);
+}
+
+.pb-40 {
+    padding-bottom: var(--lg);
+}
+
+/* Margins */
+.m-10 {
+    margin: var(--xs) 0;
+}
+
+.m-15 {
+    margin: 15px 0;
+}
+
+.m-40 {
+    margin: var(--lg) 0;
+}
+
+.my-15 {
+    margin: 15px 0;
+}
+
+.my-40 {
+    margin: var(--lg) 0;
+}
+
+.mt-10 {
+    margin-top: var(--xs);
+}
+
+.mt-40 {
+    margin-top: var(--lg);
+}
+
+.mb-15 {
+    margin-bottom: 15px
+}
+
+.mb-25 {
+    margin-bottom: 25px;
+}
+
+/* Gap */
+.gap-20 {
+    gap: var(--sm);
+}
+
+/* Sizes */
+.w-15 {
+    width: 15%
+}
+
+/* Heading */
+/* Giallo Boleano title */
+#site-name {
+    font-family: 'Nerko One', cursive;
+    text-align: center;
+    color: var(--dark-orange);
+    font-size: 3rem;
+    font-weight: 100;
 }
 
 /* Main text */
@@ -203,8 +269,8 @@ img {
 /* Recipe Video */
 .video-wrapper {
     position: relative;
-    height: 0;
     padding-bottom: 56.25%;
+    /* padding-bottom: 56.25%; === aspect-ratio: 16 / 9; */
 }
 
 .video-wrapper iframe {
@@ -221,30 +287,22 @@ img {
     border-radius: 5px;
 }
 
-.recipe-info .border {
-    border-bottom: 1px inset var(--gray);
-    margin: 15px 0;
+/* Recipe info Border */
+.border-bottom {
+    border-bottom: 1px solid var(--gray);
 }
 
+/* Recipe Details */
 .recipe-details>li {
-    margin: 20px 0;
-
-}
-
-#Social-Navbar ul {
-    margin: 40px 0;
+    margin: var(--sm) 0;
 }
 
 /* Share Links */
-#Social-Navbar span {
-    display: none;
-}
-
 #Social-Navbar a {
-    background-color: white;
-    padding: 10px 15px;
+    background-color: var(--white);
+    padding: var(--xs) 15px;
     border-radius: 25px;
-    box-shadow: 0px 2px 10px #8f8f8f;
+    box-shadow: 0px 2px var(--xs) var(--dark-grey);
     text-decoration: none;
     color: var(--black);
     font-weight: 800;
@@ -255,40 +313,18 @@ img {
     display: flex;
 }
 
-/* Recipe Ads */
-#Banner-ads {
-    display: none;
-}
-
 /* Recipe Presentation */
-#Recipe-presentation .border {
-    border: 1px solid;
-}
-
 #Recipe-presentation h2 {
     font-weight: 500;
     font-size: 2.2rem;
 }
 
-.recipe-img {
-    text-align: center;
-    max-width: 250px;
-    margin: 0 auto;
-}
-
 .recipe-short-story {
     line-height: 1.7rem;
-
 }
 
 /* Footer */
 /* Copyright */
 .copyright a {
     color: var(--white);
-}
-
-.copyright {
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px
 }
