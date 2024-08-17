@@ -1,22 +1,28 @@
 /* Tablet Responsive */
 
 @media screen and (min-width:768px) {
-    main {
-        padding: 10px 40px;
-    }
 
+    /* Heading */
+    /* Site Title */
     h1 {
         text-align: left;
     }
+
 
     .recipe-title::after {
         content: " (Dolce Tradizionale)";
     }
 
+    /* Main */
+    main {
+        padding: var(--xs) var(--lg);
+    }
+
+    /* Recipe Details */
     .recipe-details {
         display: flex;
         flex-wrap: wrap;
-        margin: 40px 0;
+        margin: var(--lg) 0;
         justify-content: flex-start;
         gap: 35px;
         align-items: center;
@@ -26,17 +32,25 @@
         margin: 0;
     }
 
+    /* Share links */
+    /* Socials */
     #Social-Navbar a {
-        padding: 10px 40px;
+        padding: var(--xs) var(--lg);
     }
 
-    #Banner-ads {
+    /*  Recipe Ads */
+    .md-d-block {
         display: block;
-        padding-top: 15px;
     }
 
-    .recipe-img {
-        margin: 5px 10px 0px 0px;
+    .md-pt-15 {
+        padding-top: 15px;
+
+    }
+
+    /* Recipe Presentaion */
+    .img-wrapper {
+        margin: 5px var(--xs) 0px 0px;
         float: left;
     }
 
@@ -47,55 +61,66 @@
 /* Desktop Rsponsive */
 
 @media screen and (min-width:992px) {
+
+    /*Giallo Booleano */
     h1 {
         font-size: 4.5rem;
     }
 
-    .row {
+    /* Display flex */
+    .lg-row,
+    #Social-Navbar li,
+    footer {
         display: flex;
     }
 
-    .col-70 {
-        flex-basis: 70%;
+    /* Main */
+    /* Recipe Title */
+    .recipe-title {
+        font-size: 3rem;
     }
 
-    .col-30 {
-        flex-basis: 30%;
-        padding: 0;
+    /* Recipe Video */
+    .lg-col-70 {
+        flex-basis: 70%;
     }
 
     .video-wrapper {
         padding-bottom: 40%;
     }
 
+    /* Recipe Info */
+    .lg-col-30 {
+        flex-basis: 30%;
+        padding: 0;
+    }
+
+    /* Recipe */
     .recipe-details {
-        gap: 10px;
+        gap: var(--xs);
         flex-direction: row;
         margin: 0;
         padding: 25px;
 
     }
 
-    #Social-Navbar span {
-        display: inline;
-    }
-
-    #Social-Navbar li {
-        display: flex;
-
-    }
-
+    /* Share links */
+    /* Socials  */
     #Social-Navbar ul {
-        gap: 10px 0px;
+        gap: var(--md);
         flex-wrap: wrap;
     }
 
     #Social-Navbar a {
-        padding: 10px 30px;
+        padding: var(--xs) var(--md);
     }
 
+    .lg-d-inline {
+        display: inline;
+    }
+
+    /* Footer */
     footer {
-        display: flex;
         justify-content: space-between;
         text-align: left;
     }
